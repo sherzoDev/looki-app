@@ -1,0 +1,10 @@
+.nnext {
+  color: #fff;
+  /* cursor: ; */
+}
+
+@media screen and (max-width: 430px) {
+  .arrows {
+    background-color: red;
+  }
+}

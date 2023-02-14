@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: rgba(25, 25, 25, 0.301);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &__box {
+    width: 45%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    border: 1px solid transparent;
+    border-bottom-color: rgba(17, 17, 17, 0.226);
+  }
+  &__closeBtn {
+    width: 25px;
+    height: 25px;
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+  }
+  &__list {
+    padding: 20px 10px 32px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__list2 {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid lightgrey;
+    margin-bottom: 30px;
+  }
+  &__item2 {
+    padding: 10px 0px 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    &:nth-child(5){
+      border-bottom: 1px solid transparent;
+    }
+  }
+  &__imgs{
+    display: flex;
+    gap: 13px;
+  }
+  &__text1 {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__icon {
+    font-size: 20px;
+    transition: 0.5s;
+    transform: rotate(-45deg);
+
+    &:hover {
+      transition: 0.8s;
+      color: #5a5ac9;
+    }
+  }
+  &__icon1{
+    font-size: 20px;
+  }
+}
+// @media screen and (max-width: 1162px) {
+//   .modal {
+//     &__box {
+//       width: 30%;
+//     }
+//   }
+// }
+// @media screen and (max-width: 1030px) {
+//   .modal {
+//     &__box {
+//       width: 35%;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 865px) {
+//   .modal {
+//     &__box {
+//       width: 40%;
+//     }
+//   }
+// }
+// @media screen and (max-width: 770px) {
+//   .modal {
+//     &__box {
+//       width: 45%;
+//     }
+//   }
+// }
+@media screen and (max-width: 691px) {
+  .modal {
+    &__box {
+      width: 70%;
+    }
+  }
+}

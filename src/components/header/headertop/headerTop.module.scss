@@ -1,0 +1,84 @@
+.HeaderTop {
+  padding: 15px 0px;
+  background-color: #000;
+  color: #fff;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__icon {
+    font-size: 25px;
+    top: 13px;
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      transition: 0.8s;
+      color: #5a5ac9;
+    }
+  }
+  &__call {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    transition: 0.5s;
+
+    &:hover {
+      transition: 0.8s;
+      color: #5a5ac9;
+    }
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__select {
+    padding: 0px 5px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__option {
+    border-radius: 50%;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 820px) {
+    .HeaderTop{
+        &__right{
+            gap: 10px;
+        }
+        &__left{
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .HeaderTop{
+        &__nav{
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+    }
+}

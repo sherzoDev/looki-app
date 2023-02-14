@@ -1,0 +1,9 @@
+.box:hover .iconHover{
+transition: 1s;
+display: flex;
+} 
+  
+.iconHover {
+  display: none;
+  transition: 1s;
+}

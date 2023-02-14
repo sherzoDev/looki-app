@@ -1,0 +1,123 @@
+.slick-dots {
+  position: relative;
+  margin-top: -5%;
+}
+.slick-dots > li {
+  width: 14px;
+  height: 14px;
+  background-color: black;
+  border-radius: 100%;
+}
+.slick-dots > li > button::before {
+  display: none;
+}
+.slick-dots > .slick-active {
+  background-color: #5a5ac9;
+}
+
+.slidee {
+  width: 100%;
+  height: 768px;
+  display: flex !important;
+  align-items: center;
+}
+.slide1 {
+  background-image: url(../../../assets/img/slide1.webp);
+  background-size: cover;
+}
+.fade1 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.fade2 {
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 480px;
+  margin-bottom: 30px;
+}
+.fadeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.slide2 {
+  background-image: url(../../../assets/img/slide2.webp);
+  background-size: cover;
+}
+.slide3 {
+  background-image: url(../../../assets/img/slide3.webp);
+  background-size: cover;
+}
+@media screen and (max-width: 1281px) {
+  .slidee {
+    height: 600px;
+  }
+}
+@media (max-width: 430px) {
+  .slidee {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .slick-dots {
+    margin-top: -10%;
+  }
+  .slidee {
+    height: 500px;
+  }
+  .slide1 {
+    background-position: -50px 0px;
+  }
+  .slide2 {
+    background-position: -50px 0px;
+  }
+  .slide3 {
+    background-position: -50px 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .slide1 {
+    background-position: -100px 0px;
+  }
+  .slide2 {
+    background-position: -100px 0px;
+  }
+  .slide3 {
+    background-position: -100px 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .slick-dots {
+    margin-top: -20%;
+  }
+  .slidee {
+    height: 400px;
+  }
+  .slide1 {
+    background-position: -250px 0px;
+  }
+  .slide2 {
+    background-position: -250px 0px;
+  }
+  .slide3 {
+    background-position: -250px 0px;
+  }
+  .fade2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 250px;
+    line-height: 43px;
+  }
+  .fadeBox {
+    gap: 0px;
+  }
+}
